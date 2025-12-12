@@ -41,12 +41,13 @@ import string
 # for n in range(length):
 #     passcode += random.choice(password)
 #
-# print(f"შენი ახალი პაროლი არის {passcode}")
-
+# print(f"შენი ახალი პაროლის არის {passcode}")
 
 # 3 .
 
 import random
+from html.parser import charref
+from random import shuffle
 
 #
 # while True:
@@ -79,19 +80,62 @@ import random
     # ამ ამოცანაში [''] ვერ ამოვიღე, რადგან ლისთი არის და სთრინგის მეთოდებს ვერ ვიყენებ
 
 
-inp = str(input("შემოიყვანეთ სასურველი სახელი: ").strip())
-random_number = random.randint(1, 100)
-
-print("იხილეთ 5 ზედმეტსახელი, რომელიც პროგრამამ მოგიფიქრათ:")
-print(f"კარგი {inp}")
-print(f"ბოროტი {inp}")
-print(f"პროგრამისტი {inp}")
-print(f"{inp} მართალი")
-print(f"{inp}{random_number}")
+# inp = str(input("შემოიყვანეთ სასურველი სახელი: ").strip())
+# random_number = random.randint(1, 100)
+#
+# print("იხილეთ 5 ზედმეტსახელი, რომელიც პროგრამამ მოგიფიქრათ:")
+# print(f"კარგი {inp}")
+# print(f"ბოროტი {inp}")
+# print(f"პროგრამისტი {inp}")
+# print(f"{inp} მართალი")
+# print(f"{inp}{random_number}")
 
 # გამარტივებული ვერსია
 
 
+# 4.
 
+# inp = input("შეიყვანეთ რიცხვები: ").strip()
+# strip = inp.split()
+# num = [int(n) for n in strip]
+#
+# print("აირჩიეთ სორტირების მეთოდი")
+# print("1 - კლებადობა")
+# print("2 - ზრდადობა")
+# print("3 - რენდომად")
+# print("4 - მხოლოდ უნიკალური მონაცემები")
+#
+# x = input("აირჩიეთ რიცხვი 1-4-მდე: ")
+#
+# inp = int
+# y = []
+# if x == "1":
+#     y = sorted(inp, reverse=True)
+# elif x == "2":
+#     y = sorted(inp)
+# elif x == "3":
+#     random.shuffle(num)
+#     y = num
+# elif x == "4":
+#     y = list(set(num))
+#
+# print(f"იხილეთ სია")
+# print(y)
+
+# 5.
+
+#მომხმარებელი შეჰყავს ტექსტი.
+#ამოცანა: პროგრამამ უნდა წაშალოს ყველა ციფრი და სიმბოლო, დატოვოს მხოლოდ ასოები და
+#სივრცეები.
+
+# inp = input("შეიყვანეთ სასურველი ტექსტი: ")
+# x = ""
+#
+# for char in inp:
+#     if char in string.ascii_letters or char in string.whitespace:
+#         x += char
+# print(x)
+
+# 6.
 
 
