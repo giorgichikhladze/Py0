@@ -1,0 +1,97 @@
+# 1.
+# input ის მეშვეობით უნდა შეგვეძლოს მითითება რა სიგრძის პაროლი გვინდა და რა
+# სიმბოლეობიდან გენერირდება იგი: პაროლის სიგრძეს ირჩევს მომხმარებელი, უნდა თუ
+# არა სიმბოლოები, რიცხვები, დიდი/პატარა ასოები (ლათინურად) თუ ქართულს შემოიტანს
+# უნდა დაუწერო რომ “შეიყვანე მხოლოდ ლათინური ასოები”
+# **უნდა გვქონდეს 4 ინფუთი - სიგრძე / რიცხვები უნდა თუ არა / დიდი და პატარა ასოები თუ
+# უნდა / თუ უნდა სიმბოლოები
+# **უნდა დაწეროთ ლოგიკა იმის მიხედვით რასაც აირჩევს მომხმარებელი და ბოლოს
+# დაუგენერიროთ პაროლი.
+import dataclasses
+import random
+import string
+
+
+# length = input("აირჩიეთ პაროლის სასურველი სიგრძე: ")
+#
+# if not length.isdigit():
+#     print("შეიყვანე რიცხვი")
+#     exit()
+#
+# length = int(length)
+#
+# is_number = input("გსურს რიცხვების გამოყენება? დაწერე დიახ ან არა: ")
+# lower_upper = input("გსურს დიდი და პატარა ასოების გამოყენება? დაწერე დიახ ან არა: ")
+# symb = input("გსურს სიმბოლოების გამოყენება? დაწერე დიახ ან არა: ")
+#
+#
+# password = ""
+#
+#
+# if is_number == "დიახ":
+#     password += "0123456789"
+#
+# if lower_upper == "დიახ":
+#     password += string.ascii_letters
+#
+# if symb == "დიახ":
+#     password += string.punctuation
+#
+# passcode = ""
+# for n in range(length):
+#     passcode += random.choice(password)
+#
+# print(f"შენი ახალი პაროლი არის {passcode}")
+
+
+# 3 .
+
+import random
+
+#
+# while True:
+#     inp = input("შემოიყვანეთ სასურველი სახელი: ").strip()
+#
+#     word = inp.split()
+#     word = str(word)
+#     if len(word) == 1 and word[0] in string.ascii_letters:
+#         break
+#
+#     if len(word) > 1:
+#         print("გთხოვთ შემოიყვანოთ მხოლოდ ერთი სიტყვა")
+#
+#     words1 = "ზედმეტი", "სახელი", "პროგრამისტი", "რობოტი", "კიბორგი"
+#     words2 = "კარგი", "ცუდი", "ბოროტი", "კეთილი", "დაღლილი"
+#     words3 = "ექიმი", "ინჟინერი", "მათემატიკოსი", "ქართველი", "ჟირაფი"
+#
+#     zedmetsaxeli = []
+#
+#     zedmetsaxeli.append(f"{random.choice(words1)} {word}")
+#     zedmetsaxeli.append(f"{word} {random.choice(words2)}")
+#     zedmetsaxeli.append(f"კეთილი {word}")
+#     zedmetsaxeli.append(f"{random.choice(words3)} {word}")
+#     zedmetsaxeli.append(f"ბოროტი {word}")
+#
+#     string = inp[0]
+#     final_clean_data = word.strip("[]").strip("'")
+#     print("\n".join(zedmetsaxeli))
+
+    # ამ ამოცანაში [''] ვერ ამოვიღე, რადგან ლისთი არის და სთრინგის მეთოდებს ვერ ვიყენებ
+
+
+inp = str(input("შემოიყვანეთ სასურველი სახელი: ").strip())
+random_number = random.randint(1, 100)
+
+print("იხილეთ 5 ზედმეტსახელი, რომელიც პროგრამამ მოგიფიქრათ:")
+print(f"კარგი {inp}")
+print(f"ბოროტი {inp}")
+print(f"პროგრამისტი {inp}")
+print(f"{inp} მართალი")
+print(f"{inp}{random_number}")
+
+# გამარტივებული ვერსია
+
+
+
+
+
