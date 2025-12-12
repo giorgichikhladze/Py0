@@ -159,7 +159,17 @@ import string
 #     print(*jami)
 #     x = jami
 
+# 7.
 
+# inp = input("დაწერე წინადადება: ")
+#
+# mydict = {}
+# split = inp.split()
+#
+# for i in split:
+#     mydict[i] = len(i)
+#
+# print(mydict)
 
 
 
