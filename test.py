@@ -45,16 +45,16 @@ import string
 
 # 3 .
 
-import random
-from html.parser import charref
-from random import shuffle
-
+# import random
+# from html.parser import charref
+# from random import shuffle
+#
 #
 # while True:
 #     inp = input("შემოიყვანეთ სასურველი სახელი: ").strip()
 #
 #     word = inp.split()
-#     word = str(word)
+#     word = str(*word)
 #     if len(word) == 1 and word[0] in string.ascii_letters:
 #         break
 #
@@ -77,7 +77,6 @@ from random import shuffle
 #     final_clean_data = word.strip("[]").strip("'")
 #     print("\n".join(zedmetsaxeli))
 
-    # ამ ამოცანაში [''] ვერ ამოვიღე, რადგან ლისთი არის და სთრინგის მეთოდებს ვერ ვიყენებ
 
 
 # inp = str(input("შემოიყვანეთ სასურველი სახელი: ").strip())
@@ -137,5 +136,30 @@ from random import shuffle
 # print(x)
 
 # 6.
+
+# პირამიდა
+# მომხმარებელს შეჰყავს რიცხვების სია (მაგ. 3,5,7,2).
+# ამოცანა: შექმენი “პირამიდა”, სადაც ყოველი ახალი რიგი ზემოთაა წინა ორი რიცხვის ჯამი.
+# 3 5 7 2
+# 8 12 9
+# 20 21
+# 41
+
+# inp = input("შეიყვანე სასურველი რიცხვები პირამიდისთვის: ")
+# inp = inp.split()
+# inp = [int(n) for n in inp]
+#
+# x = inp
+# print(*x)
+#
+# while len(x) > 0:
+#     jami = []
+#     for i in range(len(x) - 1):
+#         jami.append(x[i] + x[i + 1])
+#     print(*jami)
+#     x = jami
+
+
+
 
 
